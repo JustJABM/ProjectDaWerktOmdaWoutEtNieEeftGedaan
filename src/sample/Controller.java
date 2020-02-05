@@ -38,6 +38,7 @@ public class Controller {
     public Label lblResultaat;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     public Button deelknop;
 
     public void delen(ActionEvent actionEvent) {
@@ -80,5 +81,18 @@ public class Controller {
         }
     }
 >>>>>>> ArneBranch
+=======
+
+    public void BerekenModulo(MouseEvent mouseEvent) {
+        try {
+            int iPate = Integer.parseInt(txtGetal1.getText()) % Integer.parseInt(txtGetal2.getText());
+            lblResultaat.setText("De rest is: " + iPate);
+        }
+        catch (Exception ex)
+        {
+            lblResultaat.setText("Er is een fout opgetreden");
+        }
+    }
+>>>>>>> Mathias
 }
 >>>>>>> branchKevdc

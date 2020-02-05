@@ -12,10 +12,14 @@ public class Controller {
     public Button deelknop;
 
     public void delen(ActionEvent actionEvent) {
-
-        double eerste = Double.parseDouble(txtGetal1.getText());
-        double tweede = Double.parseDouble(txtGetal2.getText());
-        double resultaat = eerste/tweede;
-        lblResultaat.setText(String.valueOf(resultaat));
+        double eerste, tweede;
+        try{
+            eerste = Double.parseDouble(txtGetal1.getText());
+            tweede = Double.parseDouble(txtGetal2.getText());
+            double resultaat = eerste/tweede;
+            lblResultaat.setText(String.valueOf(resultaat));
+        }catch(Exception e){
+            lblResultaat.setText("Geef getallen in.");
+        }
     }
 }

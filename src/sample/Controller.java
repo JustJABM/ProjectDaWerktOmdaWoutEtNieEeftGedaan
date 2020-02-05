@@ -13,4 +13,9 @@ public class Controller {
         int kaas = Integer.parseInt(txtGetal1.getText()) + Integer.parseInt(txtGetal2.getText());
         lblResultaat.setText(String.valueOf(kaas));
     }
+
+    public void fout()
+    {
+        
+    }
 }

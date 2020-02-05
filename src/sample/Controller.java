@@ -10,10 +10,16 @@ public class Controller {
     public Label lblResultaat;
 
     public void click_btnMaal(MouseEvent mouseEvent) {
-        int getal1 = Integer.parseInt(txtGetal1.getText());
-        int getal2 = Integer.parseInt(txtGetal2.getText());
 
-        lblResultaat.setText(String.valueOf(getal1*getal2));
+        try {
+            int getal1 = Integer.parseInt(txtGetal1.getText());
+            int getal2 = Integer.parseInt(txtGetal2.getText());
+
+            lblResultaat.setText(String.valueOf(getal1*getal2));
+        }
+        catch (Exception e) {
+            lblResultaat.setText(String.valueOf(e));
+        }
     }
 
 }

@@ -19,6 +19,7 @@ public class Controller {
         {
             lblResultaat.setText("probeer onpnieuw en vul getal in");
         }
+        System.out.println("test");
     }
 
 

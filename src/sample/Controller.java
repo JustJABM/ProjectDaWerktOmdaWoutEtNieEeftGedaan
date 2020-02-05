@@ -37,6 +37,7 @@ public class Controller {
     public TextField txtGetal2;
     public Label lblResultaat;
 <<<<<<< HEAD
+<<<<<<< HEAD
     public Button deelknop;
 
     public void delen(ActionEvent actionEvent) {
@@ -66,5 +67,18 @@ public class Controller {
     }
 
 >>>>>>> KasperBranch2
+=======
+
+    public void MouseClicked_Min(MouseEvent mouseEvent) {
+        try {
+            int ham = Integer.parseInt(txtGetal1.getText()) - Integer.parseInt(txtGetal2.getText());
+            lblResultaat.setText(String.valueOf(ham));
+        }
+        catch (Exception e)
+        {
+            lblResultaat.setText("voer een getal in en probeer opnieuw");
+        }
+    }
+>>>>>>> ArneBranch
 }
 >>>>>>> branchKevdc

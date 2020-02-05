@@ -10,7 +10,13 @@ public class Controller {
     public Label lblResultaat;
 
     public void MouseClicked_Min(MouseEvent mouseEvent) {
-        int ham = Integer.parseInt(txtGetal1.getText()) - Integer.parseInt(txtGetal2.getText());
-        lblResultaat.setText(String.valueOf(ham));
+        try {
+            int ham = Integer.parseInt(txtGetal1.getText()) - Integer.parseInt(txtGetal2.getText());
+            lblResultaat.setText(String.valueOf(ham));
+        }
+        catch (Exception e)
+        {
+            lblResultaat.setText("voer een getal in en probeer opnieuw");
+        }
     }
 }

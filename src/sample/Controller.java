@@ -10,8 +10,13 @@ public class Controller {
     public Label lblResultaat;
 
     public void BerekenModulo(MouseEvent mouseEvent) {
-        int iPate = Integer.parseInt(txtGetal1.getText()) % Integer.parseInt(txtGetal2.getText());
-        lblResultaat.setText("De rest is: " + iPate);
-
+        try {
+            int iPate = Integer.parseInt(txtGetal1.getText()) % Integer.parseInt(txtGetal2.getText());
+            lblResultaat.setText("De rest is: " + iPate);
+        }
+        catch (Exception ex)
+        {
+            lblResultaat.setText("Er is een fout opgetreden");
+        }
     }
 }

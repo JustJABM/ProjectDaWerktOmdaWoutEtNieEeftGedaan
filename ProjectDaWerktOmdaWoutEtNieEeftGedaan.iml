@@ -21,7 +21,11 @@
     </content>
     <orderEntry type="jdk" jdkName="11" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+<<<<<<< HEAD
     <orderEntry type="library" exported="" name="JavaFx-11" level="application" />
+=======
+    <orderEntry type="library" name="JavaFx-11" level="application" />
+>>>>>>> KasperBranch2
     <orderEntry type="library" name="JavaFX-11" level="application" />
   </component>
 >>>>>>> branchKevdc

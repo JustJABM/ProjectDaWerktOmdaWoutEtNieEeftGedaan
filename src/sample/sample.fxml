@@ -32,7 +32,11 @@
       <TextField fx:id="txtGetal1" layoutX="14.0" layoutY="47.0" />
       <TextField fx:id="txtGetal2" layoutX="14.0" layoutY="93.0" />
       <Label fx:id="lblResultaat" layoutX="14.0" layoutY="140.0" text="HoerzaResultaat" />
+<<<<<<< HEAD
       <Button fx:id="deelknop" layoutX="32.0" layoutY="200.0" mnemonicParsing="false" onAction="#delen" text="Delen" />
+=======
+      <Button fx:id="btnMaal" layoutX="372.0" layoutY="47.0" mnemonicParsing="false" onMouseClicked="#click_btnMaal" text="*" />
+>>>>>>> KasperBranch2
    </children>
 </AnchorPane>
 >>>>>>> branchKevdc
